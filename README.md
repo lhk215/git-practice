@@ -64,11 +64,11 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 #start the ssh-agent in the background\
 $ eval $(ssh-agent -s)\
 #add ssh private key to ssh-agent\
-$ ssh-add ~/.ssh/id_rsa\
+$ ssh-add ~/.ssh/id_rsa
 5. add shh key to github account
 #Copy the SSH key to your clipboard\
 $ clip < ~/.ssh/id_rsa.pub\
-#go to setting on Github and add ssh keys\
+#go to setting on Github and add ssh keys
 6. ssh to github
 #Attempts to ssh to GitHub\
 $ ssh -T git@github.com
