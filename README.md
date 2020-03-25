@@ -1,6 +1,5 @@
 # practice repo 
 
-# create conflict
 #command used 
 
 -git init : Create a repo
