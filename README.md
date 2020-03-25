@@ -7,6 +7,10 @@
 - `git commit` : Commit changes from working directory to staging area
 - `git config` : set or get configuration
 - `git log` : show a history of project commits including reference (current branch)
+- `git clone <https://github.com/libgit2/libgit2>` : clone repository
+- `git branch -d <name_of_your_new_branch>` : Delete a branch on your local filesystem
+- `git branch -D <name_of_your_new_branch>` : force the deletion of local branch on your filesystem 
+- `git push origin :<name_of_your_new_branch>` : Delete the remote origin on github
 
 ## Git branch
 - `git branch -c first-branch` : create new branch
