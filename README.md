@@ -50,6 +50,7 @@
 - git remote -v : list remote repositories
 - git push -u <remote> <branch> : push <branch> to <remote>, and set default upstream for <branch>
 - git fetch : fetch changes from remote repository
+- git pull : fetch and then merge
 
 ## What is a branch?
 A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we are on that branch. When we make a commit while we are on a branch, the branch is updated to ref(er) to the new commit.
@@ -69,6 +70,11 @@ An automatic merge happens when the two histories have diverged, but git is able
 2. Edit files to resolve conflict
 3. Add changes to staging area with `git add`
 4. Commit changes with `git commit`
+
+## What is a remote?
+A remote repo is one hosted somewhere other than one's machine. We can add remotes with `git remote add`, and set up *tracking branches* to track differences between our local and remote repositories
+
+We push to remotes with `git push`, and fetch from them with `git fetch`. We can also fetch and merge in one set with `git pull`.
 
 ## Sync github remote repo changes on local repository
 After changes has been made on remote repo, use git fetch will fetch the changes but git log will not show the changes yet. A git merge is required to register the commit on the logs on the local repo. git pull can replace git fetch and git merge so that the sync can be done with just one command
