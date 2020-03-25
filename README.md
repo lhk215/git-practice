@@ -30,6 +30,23 @@ git merge --no-commit --no-ff new-branch : attempt to merge but do not create an
 git branch --no-merged master : list all the branch with commits that have not merged with master
 git branch --merged branch1 : list branches with no unmerged commits
 
+## Git log
+git log <ref> : show history of project commits prior to <ref> where ref can be a branch or commit
+git log --all : show all commit
+git log --author "X" : show commit with mathing author
+git log --since "6 months ago" : show commits since date
+git log --until "Aug 21" : shows commits prior to date
+git log --oneline : show one commit per line
+git log --graph : show graph view of commits
+git show <commit> : show differences introduced by commit
+git show : show a single commit
+git diff : show the difference between commits, the working directory and the staging area
+git diff <commit> : show difference between working dir and commit
+git diff --cached : difference between staging area and HEAD
+git diff --cached <commit> : difference between staging area and commit
+git diff <commitA>..<commitB> : Difference between commits
+git diff <refA>..<refB> : Difference between refs (branches, et al)
+
 ## what is a branch
 A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we are on that branch. When we make a commit while we are on a branch, the branch is updated to ref(er) to the new commit.
 
