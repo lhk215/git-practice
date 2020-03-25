@@ -55,10 +55,10 @@
   
 ## Connecting console to github repo
 1. open Git bash
-2. generate ssh key
+2. generate ssh public and private key
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 3. enter file location and passphrase
-- e.g. key saved in /c/Users/lik.hui.kong/.ssh/id_rsa.pub
+- e.g. private key saved in /c/Users/lik.hui.kong/.ssh/id_rsa.pub
 - e.g. key fingerprint : SHA256:S1ScKCUMljCpvW0Sy9ibJJqhRWXZbbimivwaw2KhvDM lik.hui.kong@accenture.com
 4. add ssh key to ssh-agent\
 #start the ssh-agent in the background\
