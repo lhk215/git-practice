@@ -20,7 +20,8 @@ git stash list : list stashes
 git stash pop : apply stashed changes to working directory
 
 ## Git Merge
-git merge: merge changes from different branches
+git merge : merge changes from different branches
+git diff : show difference before and after edit 
 git log --online --all --graph : get a visualization of all the branches
 
 ## what is a branch
@@ -34,4 +35,5 @@ Merging means to bring the changes from one branch to another.
 
 A fast forward merge happen when the target branch was branched from the current one, and there are no new changes to the current branch since then.
 
+An automatic merge happens when the two histories have diverged, but git is able to reconcile them into one set of changes. This creates a new commit on the current branch. 
 
