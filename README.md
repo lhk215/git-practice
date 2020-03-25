@@ -52,6 +52,26 @@
 - `git fetch` : fetch changes from remote repository
 - `git pull` : fetch and then merge
 - `git push <remote> <branch>` : push branch to <remote>
+  
+## Connecting console to github repo
+1. open Git bash
+2. generate ssh key
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+3. enter file location and passphrase
+- e.g. key saved in /c/Users/lik.hui.kong/.ssh/id_rsa.pub
+- e.g. key fingerprint : SHA256:S1ScKCUMljCpvW0Sy9ibJJqhRWXZbbimivwaw2KhvDM lik.hui.kong@accenture.com
+4. add ssh key to ssh-agent
+# start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+# add ssh private key to ssh-agent
+$ ssh-add ~/.ssh/id_rsa
+5. add shh key to github account
+# Copy the SSH key to your clipboard
+$ clip < ~/.ssh/id_rsa.pub
+# go to setting on Github and add ssh keys
+6. ssh to github
+# Attempts to ssh to GitHub
+$ ssh -T git@github.com
 
 ## What is a branch?
 A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we are on that branch. When we make a commit while we are on a branch, the branch is updated to ref(er) to the new commit.
