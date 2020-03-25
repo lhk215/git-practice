@@ -23,6 +23,12 @@ git stash pop : apply stashed changes to working directory
 git merge : merge changes from different branches
 git diff : show difference before and after edit 
 git log --online --all --graph : get a visualization of all the branches
+git merge --abort : abort an in-progress merge
+git log branch1..branch2 --oneline : log of commits in branch 2 that dont exist in branch 1
+git log branch1...branch2 : log of commits in either branch but not both 
+git merge --no-commit --no-ff new-branch : attempt to merge but do not create an auto merge or ff merge
+git branch --no-merged master : list all the branch with commits that have not merged with master
+git branch --merged branch1 : list branches with no unmerged commits
 
 ## what is a branch
 A branch is a ref(erence) to a commit. When HEAD points to a branch, we say we are on that branch. When we make a commit while we are on a branch, the branch is updated to ref(er) to the new commit.
@@ -36,4 +42,10 @@ Merging means to bring the changes from one branch to another.
 A fast forward merge happen when the target branch was branched from the current one, and there are no new changes to the current branch since then.
 
 An automatic merge happens when the two histories have diverged, but git is able to reconcile them into one set of changes. This creates a new commit on the current branch. 
+
+## Resolving a Merge conflict 
+1. Don't panic!
+2. Edit files to resolve conflict
+3. Add changes to staging area with `git add`
+4. Commit changes with `git commit`
 
