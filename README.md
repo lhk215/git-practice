@@ -8,7 +8,7 @@
 -git add x / .(current directory): add changes from stagging area to current branch
 -git commit : Commit changes from working directory to staging area
 -git config: set or get configuration
--git log : show history of project commits including reference (current branch)
+-git log : show a history of project commits including reference (current branch)
 
 ## Git branch
 git branch -c first-branch : create new branch
