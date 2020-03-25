@@ -32,4 +32,6 @@ HEAD is a ref(erence) to the "current" branch (or sometimes a commit). Git comma
 ## Merging
 Merging means to bring the changes from one branch to another.
 
-A fast forward merge happen when the target branch was branched from the current one, and there are no new changes to the current branch since then. 
+A fast forward merge happen when the target branch was branched from the current one, and there are no new changes to the current branch since then.
+
+
