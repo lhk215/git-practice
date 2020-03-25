@@ -22,8 +22,8 @@
 - git diff : show difference before and after edit 
 - git log --online --all --graph : get a visualization of all the branches
 - git merge --abort : abort an in-progress merge
-- git log branch1..branch2 --oneline : log of commits in branch 2 that dont exist in branch 1
-- git log branch1...branch2 : log of commits in either branch but not both 
+- `git log <branch1>..<branch2>` --oneline : log of commits in branch 2 that dont exist in branch 1
+- `git log <branch1>...<branch2>` : log of commits in either branch but not both 
 - git merge --no-commit --no-ff new-branch : attempt to merge but do not create an auto merge or ff merge
 - git branch --no-merged master : list all the branch with commits that have not merged with master
 - git branch --merged branch1 : list branches with no unmerged commits
