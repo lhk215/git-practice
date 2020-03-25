@@ -70,3 +70,5 @@ An automatic merge happens when the two histories have diverged, but git is able
 3. Add changes to staging area with `git add`
 4. Commit changes with `git commit`
 
+## Sync github remote repo changes on local repository
+After changes has been made on remote repo, use git fetch will fetch the changes but git log will not show the changes yet. A git merge is required to register the commit on the logs on the local repo. git pull can replace git fetch and git merge so that the sync can be done with just one command
