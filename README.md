@@ -7,6 +7,10 @@
 - `git commit` : Commit changes from working directory to staging area
 - `git config` : set or get configuration
 - `git log` : show a history of project commits including reference (current branch)
+- `git clone <https://github.com/libgit2/libgit2>` : clone repository
+- `git branch -d <name_of_your_new_branch>` : Delete a branch on your local filesystem
+- `git branch -D <name_of_your_new_branch>` : force the deletion of local branch on your filesystem 
+- `git push origin :<name_of_your_new_branch>` : Delete the remote origin on github
 
 ## Git branch
 - `git branch -c first-branch` : create new branch
@@ -55,10 +59,11 @@
   
 ## Connecting console to github repo
 1. open Git bash
-2. generate ssh key
+2. generate ssh public and private key\
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 3. enter file location and passphrase
-- e.g. key saved in /c/Users/lik.hui.kong/.ssh/id_rsa.pub
+- e.g. public key saved in /c/Users/lik.hui.kong/.ssh/id_rsa.pub
+- e.g. private key saved in /c/Users/lik.hui.kong/.ssh/id_rsa (if others got hold of this, consider compromised)
 - e.g. key fingerprint : SHA256:S1ScKCUMljCpvW0Sy9ibJJqhRWXZbbimivwaw2KhvDM lik.hui.kong@accenture.com
 4. add ssh key to ssh-agent\
 #start the ssh-agent in the background\
