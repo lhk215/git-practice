@@ -57,7 +57,7 @@
 - `git pull` : fetch and then merge
 - `git push <remote> <branch>` : push branch to <remote>
 - `git remote remove origin` : remove remote repository
-- `git push origin --delete <branch> : remote remote branch
+- `git push origin --delete <branch>` : remote remote branch
   
 ## Connecting console to github repo
 1. open Git bash
