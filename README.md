@@ -50,14 +50,14 @@
 - `git diff <refA>..<refB>` : Difference between refs (branches, et al)
   
 ## Git Remote
-- `git remote add <remote> <url>` : add a new <remote> at <url>
+- `git remote add <remote> <url>` : add a new `<remote>` at `<url>`
 - `git remote -v` : list remote repositories
-- `git push -u <remote> <branch>` : push <branch> to <remote>, and set default upstream for <branch>
+- `git push -u <remote> <branch>` : push `<branch>` to `<remote>`, and set default upstream for <branch>
 - `git fetch` : fetch changes from remote repository
 - `git pull` : fetch and then merge
-- `git push <remote> <branch>` : push branch to <remote>
+- `git push <remote> <branch>` : push branch to `<remote>`
 - `git remote remove origin` : remove remote repository
-- `git push origin --delete <branch>` : remote remote branch
+- `git push origin --delete `<branch>` : remote remote branch
   
 ## Connecting console to github repo
 1. open Git bash
